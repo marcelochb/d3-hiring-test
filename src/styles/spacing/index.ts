@@ -1,0 +1,18 @@
+export const spacings = {
+  marginBase: "10px",
+  marginLarge: "15px",
+  marginLagest: "20px",
+  marginSmall: "5px",
+  marginSmallest: "3px",
+  paddingBase: "30px",
+  paddingLarge: "40px",
+  paddingLagest: "50px",
+  paddingSmall: "20px",
+  paddingSmallest: "10px",
+  desktopWidth: "1440px",
+  mobileWidth: "375px",
+  inputHeight: "50px",
+  inputWidthBase: "200px",
+  inputWidthDouble: "400px",
+  radius: "4px",
+};

@@ -16,5 +16,23 @@ declare module "styled-components" {
       small: string;
       smallest: string;
     };
+    spacing: {
+      marginBase: string;
+      marginLarge: string;
+      marginLagest: string;
+      marginSmall: string;
+      marginSmallest: string;
+      paddingBase: string;
+      paddingLarge: string;
+      paddingLagest: string;
+      paddingSmall: string;
+      paddingSmallest: string;
+      desktopWidth: string;
+      mobileWidth: string;
+      inputHeight: string;
+      inputWidthBase: string;
+      inputWidthDouble: string;
+      radius: string;
+    };
   }
 }

@@ -17,4 +17,16 @@ body {
   font-family: 'Nunito Sans',sans-serif;
 }
 
+select, button , input{
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img {
+  border-style: none;
+}
+
 `;

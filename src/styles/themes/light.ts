@@ -1,7 +1,10 @@
 import { lightTheme } from "../colors";
 import { fontSizes } from "../typography";
-export default {
-  title: "Light",
+import { spacings } from "../spacing";
+import { DefaultTheme } from "styled-components";
+export const light: DefaultTheme = {
+  title: "Dark",
   colors: lightTheme,
   fontSize: fontSizes,
+  spacing: spacings,
 };
