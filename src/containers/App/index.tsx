@@ -16,13 +16,11 @@ export const App = () => {
   }
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <GlobalStyle />
-        <BrowserRouter>
-          <Header changeTheme={changeTheme} />
-          <Routes />
-        </BrowserRouter>
-      </div>
+      <BrowserRouter>
+        <Header changeTheme={changeTheme} />
+        <Routes />
+      </BrowserRouter>
+      <GlobalStyle />
     </ThemeProvider>
   );
 }

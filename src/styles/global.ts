@@ -22,7 +22,6 @@ select, button , input{
   border: none;
   box-shadow: none;
   outline: none;
-  /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
 }
 
 img {
