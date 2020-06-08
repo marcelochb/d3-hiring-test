@@ -4,15 +4,18 @@ export const useDropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
 
-  const options = ["Africa", "América", "Asia", "Europa", "Oceania"];
+  const options = [
+    { label: "Todos", value: "Todos" },
+    { label: "Africa", value: "Africa" },
+    { label: "América", value: "Americas" },
+    { label: "Asia", value: "Asia" },
+    { label: "Europa", value: "Europe" },
+    { label: "Oceania", value: "Oceania" },
+    { label: "Polar", value: "Polar" },
+  ];
 
   const toggling = () => setIsOpen(!isOpen);
 
-  const onOptionClicked = (value: string) => () => {
-    setSelectedOption(value);
-    setIsOpen(false);
-    console.log(selectedOption);
-  };
   return {
     getDropDown: {
       isOpen,
@@ -21,7 +24,7 @@ export const useDropDown = () => {
     },
     handleDropDown: {
       toggling,
-      onOptionClicked,
+      setSelectedOption,
     },
   };
 };
