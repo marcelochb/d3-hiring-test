@@ -121,7 +121,7 @@ export const BorderCountries = styled.div`
   }
 
   @media only screen and (max-width: 787px) {
-    width: 360px;
+    width: 340px;
   }
 `;
 
