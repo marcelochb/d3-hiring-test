@@ -15,6 +15,7 @@ export const Content = styled.div`
   background: ${(props) => props.theme.colors.elements};
   width: 290px;
   height: 350px;
+  border-radius: ${(props) => props.theme.spacing.radius};
 `;
 
 export const CountryImage = styled.div`

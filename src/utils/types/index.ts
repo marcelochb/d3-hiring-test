@@ -23,6 +23,7 @@ export type TypeCountryData = {
   name: string;
   capital: string;
   population: number;
+  alpha3Code: string;
   region: string;
   subregion: string;
   borders: string[];
@@ -36,13 +37,24 @@ export type TypeCountryData = {
 export type TypeInputSearchCountry = {
   searchCountriesByName: (valueFromInputSearch: string) => void;
 };
+export type TypeDropDownRegion = {
+  searchCountriesByRegion: (valueFromDropDownRegion: string) => void;
+};
 
 export type TypeCountriesContainer = {
   countries: TypeCountryData[];
 };
 
-export type TypeHomeContainer = TypeInputSearchCountry & TypeCountriesContainer;
+export type TypeHomeContainer = TypeInputSearchCountry &
+  TypeCountriesContainer &
+  TypeDropDownRegion;
 
 export type TypeCountryComponent = {
   country: TypeCountryData;
 };
+
+export type TypeUseFetchDataApi = {
+  isEnableToFetchAllData: boolean;
+};
+
+export type TypeDetailCountry = TypeCountryComponent;
