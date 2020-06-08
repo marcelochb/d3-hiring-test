@@ -9,6 +9,10 @@ export const Container = styled.div`
   align-items: center;
   padding: ${(props) => props.theme.spacing.paddingBase} 0;
   padding-left: ${(props) => props.theme.spacing.paddingBase};
+
+  @media only screen and (max-width: 787px) {
+    width: 100%;
+  }
 `;
 
 export const InputSearch = styled.input`

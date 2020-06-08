@@ -34,8 +34,6 @@ export const DetailCountry: React.FC<TypeDetailCountry> = ({ country }) => {
             <img
               src={country.flag}
               alt={country.name}
-              width={500}
-              height={500}
             />
           </CountryImage>
 

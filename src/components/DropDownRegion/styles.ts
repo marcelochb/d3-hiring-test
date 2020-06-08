@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const DropDownContainer = styled.div`
   width: 200px;
+
+  @media only screen and (max-width: 787px) {
+    padding-top: ${(props) => props.theme.spacing.paddingBase};
+  }
 `;
 
 export const DropDownHeader = styled.div`
