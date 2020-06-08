@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import { BrowserRouter } from "react-router-dom";
 
-import { Header } from './components';
-import GlobalStyle from './styles/global';
-import { light, dark } from './styles/themes';
-import { Routes } from "./routes";
+import { Header } from '../../components';
+import GlobalStyle from '../../styles/global';
+import { light, dark } from '../../styles/themes';
+import { Routes } from "../../routes";
 
 
-const App = () => {
+export const App = () => {
   const [theme, setTheme] = useState<DefaultTheme>(dark);
 
   const changeTheme = () => {
@@ -26,4 +26,3 @@ const App = () => {
     </ThemeProvider>
   );
 }
-export default App;
